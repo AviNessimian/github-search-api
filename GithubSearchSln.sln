@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GithubSearch.Web", "GithubSearch.Web\GithubSearch.Web.csproj", "{BA08DD7D-2B80-49E8-8F37-1B0FC0F6B07B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GithubSearch.Core", "GithubSearch.Core\GithubSearch.Core.csproj", "{4B0BF2B4-5832-4238-821D-4EE2B96DFD90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{861589C0-64E6-4B45-9FA3-0DFC6E842506}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{324E8802-A9B6-47A3-B3F9-94A7476619C1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GithubSearch.UnitTest", "GithubSearch.UnitTest\GithubSearch.UnitTest.csproj", "{D188668A-B17D-47BD-A66D-D89793B129C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{174590AF-3F36-4FE9-9E45-2CFE6E5A309D}"
+	ProjectSection(SolutionItems) = preProject
+		fullstack-exercise.txt = fullstack-exercise.txt
+		GitHub repositories search .postman_collection.json = GitHub repositories search .postman_collection.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubSearch.Infrastructure", "GithubSearch.Infrastructure\GithubSearch.Infrastructure.csproj", "{CA99991F-AB28-449D-917E-C25312427C04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA08DD7D-2B80-49E8-8F37-1B0FC0F6B07B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA08DD7D-2B80-49E8-8F37-1B0FC0F6B07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA08DD7D-2B80-49E8-8F37-1B0FC0F6B07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA08DD7D-2B80-49E8-8F37-1B0FC0F6B07B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B0BF2B4-5832-4238-821D-4EE2B96DFD90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0BF2B4-5832-4238-821D-4EE2B96DFD90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0BF2B4-5832-4238-821D-4EE2B96DFD90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0BF2B4-5832-4238-821D-4EE2B96DFD90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D188668A-B17D-47BD-A66D-D89793B129C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D188668A-B17D-47BD-A66D-D89793B129C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D188668A-B17D-47BD-A66D-D89793B129C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D188668A-B17D-47BD-A66D-D89793B129C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA99991F-AB28-449D-917E-C25312427C04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA99991F-AB28-449D-917E-C25312427C04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA99991F-AB28-449D-917E-C25312427C04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA99991F-AB28-449D-917E-C25312427C04}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA08DD7D-2B80-49E8-8F37-1B0FC0F6B07B} = {861589C0-64E6-4B45-9FA3-0DFC6E842506}
+		{4B0BF2B4-5832-4238-821D-4EE2B96DFD90} = {861589C0-64E6-4B45-9FA3-0DFC6E842506}
+		{D188668A-B17D-47BD-A66D-D89793B129C6} = {324E8802-A9B6-47A3-B3F9-94A7476619C1}
+		{CA99991F-AB28-449D-917E-C25312427C04} = {861589C0-64E6-4B45-9FA3-0DFC6E842506}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91A38CED-DB21-4747-BFF0-69927CF074F5}
+	EndGlobalSection
+EndGlobal

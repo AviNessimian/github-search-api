@@ -1,0 +1,236 @@
+{
+	"info": {
+		"_postman_id": "edc413af-6d70-43a8-8d46-e9b1c147fabf",
+		"name": "GitHub repositories search ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "github api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/search/repositories?q=tetris&sort=stars&order=desc&page=1&per_page=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"repositories"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "tetris"
+						},
+						{
+							"key": "sort",
+							"value": "stars"
+						},
+						{
+							"key": "order",
+							"value": "desc"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/search",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkVCNkVDQkI4NkU0NjJEODFFRjY4OEIxODBDN0VGOEE2IiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE1OTcwNTY2MjgsImV4cCI6MTU5NzA2MDIyOCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMTYiLCJjbGllbnRfaWQiOiJnaXRodWItc2VhcmNoLWFwcCIsInN1YiI6Ijg4NDIxMTEzIiwiYXV0aF90aW1lIjoxNTk3MDQ4NDEyLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJCb2IgU21pdGgiLCJlbWFpbCI6IkJvYlNtaXRoQGVtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwianRpIjoiMzFENTE1RjA5Q0VGMTM1MkMzRUE4NTlBMzdEODVDOTciLCJzaWQiOiI0NkJEN0E5QkM2RTNBMzlFREM5M0RFNkIxN0ZEOTk0NSIsImlhdCI6MTU5NzA1NjYyOCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIiwicm9sZXMiLCJhcGkiXSwiYW1yIjpbInB3ZCJdfQ.lsEJTASUsYxMWsoOSesQwNy1qCT5wbA7ekjcW9Oy_AJ5chSLZh3mjKT4JXcO4YmnmsFXo3pN99hFAIIBlY-FgO9NYSvQQyz_yfaL4UH6WLQey3w3GhPKJK7yVJaDMddpTo-XGPT38k38fKNzpEO8fwS0uTTeUCR3ypu4na7gY6sBlWcSQOTYmkS8yVCTET_kUUU6RNln-EI1qwu3xle3E7G5Wq2UjiB_LI79CLiyqVIUvUqPGhV2n5km2G14cUc8aReUX2IjszKvkNbFDgFYwYj4JlIhdgogjskuXFEfnRqTs4p5496YEKr6djXch0yG7tNtM8zgZv3JH0yN6YePiQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44316/api/search?Name=aaa&Order=desc&ShowEntries=20",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "aaa"
+						},
+						{
+							"key": "Order",
+							"value": "desc"
+						},
+						{
+							"key": "Page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "ShowEntries",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkI3QkI4RUUxMEVGMjQyQUVGQkRDM0YxQ0E2M0Y3REY0IiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE1OTcwNjI5NzksImV4cCI6MTU5NzA2NjU3OSwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMTYiLCJjbGllbnRfaWQiOiJnaXRodWItc2VhcmNoLWFwcCIsInN1YiI6Ijg4NDIxMTEzIiwiYXV0aF90aW1lIjoxNTk3MDQ4NDEyLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJCb2IgU21pdGgiLCJlbWFpbCI6IkJvYlNtaXRoQGVtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwianRpIjoiOEVDOERBQ0Y3OTdDRTlCQ0VGN0FBRTI2NjY0NkIxMjkiLCJzaWQiOiI0NkJEN0E5QkM2RTNBMzlFREM5M0RFNkIxN0ZEOTk0NSIsImlhdCI6MTU5NzA2Mjk3OSwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIiwicm9sZXMiLCJhcGkiXSwiYW1yIjpbInB3ZCJdfQ.BtWJdJtYHLJ2-KLLvdZsiYbx-EiGJjbij2uSFgWeLoQnXiIWtHRPwXseboEPyw8Yiu0uTvhV57e1mqXNnPggq4K5VJoy821j7rNicsMweFscdZ5q3ESbHGJa1zpxiiGDtkBqmDuIZ0Ni4q9aEvPqn75utQhGUSrC3GNsmThqJjebg5ZysJGwYd6eVRgBekji8ukzrdAJoMItCvUMESUfHJjqmxvkRf7Js_opQG4IWgcM6PLyWowvDg84C51p9M3Xap3gFX6u_RZLfXYqptBrbphadcIMsByheypd4bAmo2MGK060Dw0BqIWdcahU6a7nnRLHhqQBIuNesA6GecX7Ig",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\":\"keavil/AAAI18-code\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44316/api/favorites",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"favorites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg5RDMwQUIxNDQ5RDk2NzNGRTA5MjNGNzNCREYxMzdCIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE1OTcwNjI3NTcsImV4cCI6MTU5NzA2NjM1NywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMTYiLCJjbGllbnRfaWQiOiJnaXRodWItc2VhcmNoLWFwcCIsInN1YiI6Ijg4NDIxMTEzIiwiYXV0aF90aW1lIjoxNTk3MDQ4NDEyLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJCb2IgU21pdGgiLCJlbWFpbCI6IkJvYlNtaXRoQGVtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwianRpIjoiQkZGMjk5RjUwQjA0OEJBNjY3NUVDOEM3QzJBNDgzM0IiLCJzaWQiOiI0NkJEN0E5QkM2RTNBMzlFREM5M0RFNkIxN0ZEOTk0NSIsImlhdCI6MTU5NzA2Mjc1Nywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIiwicm9sZXMiLCJhcGkiXSwiYW1yIjpbInB3ZCJdfQ.S735k9ok2C6ir1CHPhf090tdEGxQ8djugVNjC_7dzyMae3PElZaIxH1CjEOlvYUVMbZSIDXbN_UO0ynR_T7-hEsB7qakTqe2Lvdcq7kfBGvVij_-1jZ3aJdATRhq2y5Gh_dmWBdrpV3LtjZCTZ9h7E5crh4oLJJ6FwTy8MWRnbIsD5bR93jFa4kz75175Kmn_KxoDXy1WqlxPoahNH8j90loNT6cqiH3kbfGSs6jo7FLDwzkfpSyEitrcDZsrGGzS7mqnRjprkfTVPp3TnmVyOhaU5-S0ydfbJY4_U1zGDt3DSA6JRvU4R3kWYBWkaeHvcAgefkNGObnwB-b94Pssw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44316/api/favorites",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"favorites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites/{fullName}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjdGMzAwMkZDMzRGM0FDOUFDMjc1QzcxRUY1M0U0MkMxIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE1OTcwNzg5MzIsImV4cCI6MTU5NzA4MjUzMiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMTYiLCJjbGllbnRfaWQiOiJnaXRodWItc2VhcmNoLWFwcCIsInN1YiI6Ijg4NDIxMTEzIiwiYXV0aF90aW1lIjoxNTk3MDQ4NDEyLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJCb2IgU21pdGgiLCJlbWFpbCI6IkJvYlNtaXRoQGVtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwianRpIjoiQ0RFMjk5MEY0Q0QzOUU2M0VEMEM0OTVGMjgyMjEzRUQiLCJzaWQiOiI0NkJEN0E5QkM2RTNBMzlFREM5M0RFNkIxN0ZEOTk0NSIsImlhdCI6MTU5NzA3ODkzMiwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIiwicm9sZXMiLCJhcGkiXSwiYW1yIjpbInB3ZCJdfQ.cHbMRyemgTxXKKz4mmarucMLb5wjmIlmNhXPgK1805u8D7Z6h7RybFBBce9cE_hkiGQPL2mDAID99o__3Jj5aC9-HfH3H1aN_VkElUW4IbD9GECbe9mE99pMnis_vLWMwZAJgZk3qtewrMbMfYKWvxL1wr7-minL5uMBn8oVsnTLuwW6QCo-nXlvbdK53RXE0t2FcFrcOU_6FnNI-CIX4jy9TPDWiTL-JZMd1asE7KyRGXmJHO4iY9ahddG1AhdM05b1hzhbHVf3FQWb1GBe0mGJ3Dovtunv8m-k7yQllB6TeoXtyI4mZlEhlOUqo_qX8aRde99bv1ZsNAubhT_OCQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44316/api/favorites/isfavorite/keavil/AAAI18-code",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"favorites",
+						"isfavorite",
+						"keavil",
+						"AAAI18-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites/{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44316/api/favorites/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"favorites",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

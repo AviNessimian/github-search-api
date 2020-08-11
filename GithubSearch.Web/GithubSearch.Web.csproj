@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="IdentityServer4" Version="4.0.4" />
+		<PackageReference Include="Microsoft.TypeScript.MSBuild" Version="3.9.7">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\GithubSearch.Core\GithubSearch.Core.csproj" />
+		<ProjectReference Include="..\GithubSearch.Infrastructure\GithubSearch.Infrastructure.csproj" />
+	</ItemGroup>
+
+</Project>
