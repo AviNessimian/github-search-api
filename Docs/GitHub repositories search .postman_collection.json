@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "edc413af-6d70-43a8-8d46-e9b1c147fabf",
+		"name": "GitHub repositories search ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "github api",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.github.com/search/repositories?q=chvin/react-tetris&sort=stars&order=desc&page=1&per_page=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"github",
+						"com"
+					],
+					"path": [
+						"search",
+						"repositories"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "chvin/react-tetris"
+						},
+						{
+							"key": "sort",
+							"value": "stars"
+						},
+						{
+							"key": "order",
+							"value": "desc"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "per_page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/search",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU3MkE4MjFFMzFBMEYyMTlFOTRBQzhDRDJGODA1REZDIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE1OTcwNzkxMTIsImV4cCI6MTU5NzA4MjcxMiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMTYiLCJjbGllbnRfaWQiOiJnaXRodWItc2VhcmNoLWFwcCIsInN1YiI6Ijg4NDIxMTEzIiwiYXV0aF90aW1lIjoxNTk3MDQ4NDEyLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJCb2IgU21pdGgiLCJlbWFpbCI6IkJvYlNtaXRoQGVtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwianRpIjoiQzYwRkNENDZGNDhENkE2QTFBOTAyQjkwMzA5NTc1QTkiLCJzaWQiOiI0NkJEN0E5QkM2RTNBMzlFREM5M0RFNkIxN0ZEOTk0NSIsImlhdCI6MTU5NzA3OTExMiwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIiwicm9sZXMiLCJhcGkiXSwiYW1yIjpbInB3ZCJdfQ.GwRSm0WIWtaFivf7ZkHysA7SIVq-AaPdsGCqyNW_obhQsR-VvyHxVzVssyuOB0FrpMij5DX4oNwCw8I224NBoCX6yhsUgJPcbJYte1sW__UllytFSf47EctjZMexUh3GWQgwyYEY_na7tlUCvWyt4PbLmoKy-TnEeQwJgfN0rC-xpNHUk3KFs46ifKAI4XAbt1FOfeGVbLXXWODCrM5Akncs-r8xaModtihaBZCHDTz8o4Ws4qnXZjZGo7TVzX7oSDyPSEFkgIpBHpcSoAnf49SD8h4cATIkSgBG3IhPXI6hZQZ1mBBwY0tXRHXcp7YsAGfL1Eo0GzGvun9JxG1Aew",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44316/api/search?Name=aaa&Order=desc&ShowEntries=20",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "aaa"
+						},
+						{
+							"key": "Order",
+							"value": "desc"
+						},
+						{
+							"key": "Page",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "ShowEntries",
+							"value": "20"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkVCOTlGNEU0NTI2NTJBNkQyNUNGMkU2NkQyNkNCRkE2IiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE1OTcwODA5OTcsImV4cCI6MTU5NzA4NDU5NywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMTYiLCJjbGllbnRfaWQiOiJnaXRodWItc2VhcmNoLWFwcCIsInN1YiI6Ijg4NDIxMTEzIiwiYXV0aF90aW1lIjoxNTk3MDQ4NDEyLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJCb2IgU21pdGgiLCJlbWFpbCI6IkJvYlNtaXRoQGVtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwianRpIjoiQTJDNTIyRTg3REI5NjdDRUNFRjgzRDU2RUZFOTI3MTUiLCJzaWQiOiI0NkJEN0E5QkM2RTNBMzlFREM5M0RFNkIxN0ZEOTk0NSIsImlhdCI6MTU5NzA4MDk5Nywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIiwicm9sZXMiLCJhcGkiXSwiYW1yIjpbInB3ZCJdfQ.BvAslQr2e_gjG3IlGO32gqJ4cC4_PZ43zqQjAtkNlwduMiLfAlH3fp3FZgQ-KwUYYJ3kvuzby37tI2RNKttne1Toxs6uCXTB2Cn0QAKDvQ41U6Pc8yF2QHytCxgasIsnpDtvGMYdeR0vnUwM2NMzk6iSe0ybvVAJT2hhk_WbcLVj58GW3FbveJy1AfetwWISKOFt_c59D6NgqkMryCPSTx53uQZO_2pa63qFreiecxXxtJlLh5Ag8ibm7-U0Xw3Ze-oTAjNovbpIIG8MLzfZbee2drBh8jEFPr4gIxOFNhRAyta9EICkrG3kkcooPDbiayJxxN2CuN_d4Lo8P9dYRg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fullName\":\"keavil/AAAI18-code\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44316/api/favorites",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"favorites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkJEMkQ5ODAzQUZFNDJGRkQxODVENkQ0RkZBN0Y0QkVFIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE1OTcwNzk1ODgsImV4cCI6MTU5NzA4MzE4OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMTYiLCJjbGllbnRfaWQiOiJnaXRodWItc2VhcmNoLWFwcCIsInN1YiI6Ijg4NDIxMTEzIiwiYXV0aF90aW1lIjoxNTk3MDQ4NDEyLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJCb2IgU21pdGgiLCJlbWFpbCI6IkJvYlNtaXRoQGVtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwianRpIjoiRjA2MTJDOUU5RjY4OUVGN0MyNzkxODcwODQxQkIwQjkiLCJzaWQiOiI0NkJEN0E5QkM2RTNBMzlFREM5M0RFNkIxN0ZEOTk0NSIsImlhdCI6MTU5NzA3OTU4OCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIiwicm9sZXMiLCJhcGkiXSwiYW1yIjpbInB3ZCJdfQ.qcqg1A8GdcVEI9L0L9OfKl8ueBoc6zHQH-7plu1gN3gQYuyAGoQhWJT3DFYvqsLVrqxYHlAM2QeMhicfckQ-cyOqT2sTnqQJX6yUBYb1lBuEyWoDq79UfljlF9S2WJG4hmYq3F8EgOAu80M91gVCEndFrF3MRm7UGk8Iof7xUGFsVuaOMlw2mmNj04I1SDu4PqzGqzZwx7okSReto-nWeo51A5mlwM7dvJcbaHrH1_b7Rbfs6EPOi5hVTnPUXOcOyRMDYn95ioUBQCkLIY_zomDcioQ66_F_8Qw7Ke0rRVnYjGcvJ8cf8q61Nj9uoWzcCaZLLzdB2C7QkN5R7Dx_Pw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44316/api/favorites",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"favorites"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkJEMkQ5ODAzQUZFNDJGRkQxODVENkQ0RkZBN0Y0QkVFIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE1OTcwNzk1ODgsImV4cCI6MTU5NzA4MzE4OCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMTYiLCJjbGllbnRfaWQiOiJnaXRodWItc2VhcmNoLWFwcCIsInN1YiI6Ijg4NDIxMTEzIiwiYXV0aF90aW1lIjoxNTk3MDQ4NDEyLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJCb2IgU21pdGgiLCJlbWFpbCI6IkJvYlNtaXRoQGVtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwianRpIjoiRjA2MTJDOUU5RjY4OUVGN0MyNzkxODcwODQxQkIwQjkiLCJzaWQiOiI0NkJEN0E5QkM2RTNBMzlFREM5M0RFNkIxN0ZEOTk0NSIsImlhdCI6MTU5NzA3OTU4OCwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIiwicm9sZXMiLCJhcGkiXSwiYW1yIjpbInB3ZCJdfQ.qcqg1A8GdcVEI9L0L9OfKl8ueBoc6zHQH-7plu1gN3gQYuyAGoQhWJT3DFYvqsLVrqxYHlAM2QeMhicfckQ-cyOqT2sTnqQJX6yUBYb1lBuEyWoDq79UfljlF9S2WJG4hmYq3F8EgOAu80M91gVCEndFrF3MRm7UGk8Iof7xUGFsVuaOMlw2mmNj04I1SDu4PqzGqzZwx7okSReto-nWeo51A5mlwM7dvJcbaHrH1_b7Rbfs6EPOi5hVTnPUXOcOyRMDYn95ioUBQCkLIY_zomDcioQ66_F_8Qw7Ke0rRVnYjGcvJ8cf8q61Nj9uoWzcCaZLLzdB2C7QkN5R7Dx_Pw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44316/api/favorites/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"favorites",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites/{fullName}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkVCOTlGNEU0NTI2NTJBNkQyNUNGMkU2NkQyNkNCRkE2IiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE1OTcwODA5OTcsImV4cCI6MTU5NzA4NDU5NywiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMTYiLCJjbGllbnRfaWQiOiJnaXRodWItc2VhcmNoLWFwcCIsInN1YiI6Ijg4NDIxMTEzIiwiYXV0aF90aW1lIjoxNTk3MDQ4NDEyLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJCb2IgU21pdGgiLCJlbWFpbCI6IkJvYlNtaXRoQGVtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwianRpIjoiQTJDNTIyRTg3REI5NjdDRUNFRjgzRDU2RUZFOTI3MTUiLCJzaWQiOiI0NkJEN0E5QkM2RTNBMzlFREM5M0RFNkIxN0ZEOTk0NSIsImlhdCI6MTU5NzA4MDk5Nywic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIiwicm9sZXMiLCJhcGkiXSwiYW1yIjpbInB3ZCJdfQ.BvAslQr2e_gjG3IlGO32gqJ4cC4_PZ43zqQjAtkNlwduMiLfAlH3fp3FZgQ-KwUYYJ3kvuzby37tI2RNKttne1Toxs6uCXTB2Cn0QAKDvQ41U6Pc8yF2QHytCxgasIsnpDtvGMYdeR0vnUwM2NMzk6iSe0ybvVAJT2hhk_WbcLVj58GW3FbveJy1AfetwWISKOFt_c59D6NgqkMryCPSTx53uQZO_2pa63qFreiecxXxtJlLh5Ag8ibm7-U0Xw3Ze-oTAjNovbpIIG8MLzfZbee2drBh8jEFPr4gIxOFNhRAyta9EICkrG3kkcooPDbiayJxxN2CuN_d4Lo8P9dYRg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44316/api/favorites/isfavorite/keavil%2FAAAI18-code",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"favorites",
+						"isfavorite",
+						"keavil%2FAAAI18-code"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/favorites/{id}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkY2OEY3MjNBMUM0RjJBOUZENDM0N0Q3MjMzQTBBQUYwIiwidHlwIjoiYXQrand0In0.eyJuYmYiOjE1OTcwNjQ1OTYsImV4cCI6MTU5NzA2ODE5NiwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzMTYiLCJjbGllbnRfaWQiOiJnaXRodWItc2VhcmNoLWFwcCIsInN1YiI6Ijg4NDIxMTEzIiwiYXV0aF90aW1lIjoxNTk3MDQ4NDEyLCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJCb2IgU21pdGgiLCJlbWFpbCI6IkJvYlNtaXRoQGVtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwianRpIjoiOUEwQjVDOTkwMzU3MUE0NTBBQzhFODU0QTU4QTVEMTciLCJzaWQiOiI0NkJEN0E5QkM2RTNBMzlFREM5M0RFNkIxN0ZEOTk0NSIsImlhdCI6MTU5NzA2NDU5Niwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSIsImVtYWlsIiwicm9sZXMiLCJhcGkiXSwiYW1yIjpbInB3ZCJdfQ.sUZmK94Z0UQAZEYolU5BirfPgPi9E5-PHXkV4V6xh3Urpy0HIgE6ry4FDPV-I6l77RVtbgIkzIvJoCAsiT0jMB5oKwZgPJ678aA5_tSSxvEMm7BWO0I71sL2r9vkXTrzW-lRewA61CsdBba7pU93F5wQC5GpS9pw1z9U2eOMKP0fCYERETb3MmGHDnI9xFa_LAQ-Wt70lvEf05lpS4_-VBj4jNCniTlV68ukRlHiQLsoIOoAg2aGAhbO9p1C5pFk87D2vZr7FiRXQl-5gJydTYRM5ZCRna_231eqTTjhP4NLpsCz_1ziDtoUN5xsKP0bUbo879y9NjbKg64KRbkspQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44316/api/favorites/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44316",
+					"path": [
+						"api",
+						"favorites",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
