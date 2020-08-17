@@ -15,6 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GithubSearch.UnitTest", "Gi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{174590AF-3F36-4FE9-9E45-2CFE6E5A309D}"
 	ProjectSection(SolutionItems) = preProject
+		Docs\Architecture.png = Docs\Architecture.png
 		Docs\fullstack-exercise.md = Docs\fullstack-exercise.md
 		GitHub repositories search .postman_collection.json = GitHub repositories search .postman_collection.json
 	EndProjectSection
