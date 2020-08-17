@@ -1,8 +1,8 @@
 # Github Search Server
 
-## [Exercise README](/Docs/fullstack-exercise.md)
+### [Exercise README](/Docs/fullstack-exercise.md)
 
-### [Github Search Client App](https://github.com/AviNessimian/github-search-client-app "Client Side")
+##### [Github Search Client App](https://github.com/AviNessimian/github-search-client-app "Client Side")
 
 ___
 * DotNet Core 3.1
