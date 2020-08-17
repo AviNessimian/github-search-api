@@ -7,7 +7,11 @@ ___
 # Using:
   * DotNet Core 3.1
   * Ef Core (code first)
-  * Clean Architecture ![Screenshot](/Docs/Architecture.png)
+  * Clean Code
+  * Clean Architecture 
+  
+  
+  ![Screenshot](/Docs/Architecture.png)
     
 
 
