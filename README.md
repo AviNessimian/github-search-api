@@ -1,4 +1,5 @@
-# Github Search Server  [Github Search Client App](https://github.com/AviNessimian/github-search-client-app "Client Side")
+# Github Search Server #  [Github Search Client App](https://github.com/AviNessimian/github-search-client-app "Client Side")
+
 ### angular + asp.net core exercise ###
 
 * You need to create a search engine in github repositories.
