@@ -3,10 +3,12 @@
 ##### [Go To Github Search Client](https://github.com/AviNessimian/github-search-client-app "Client Side")
 ##### [Go To Exercise README](/Docs/fullstack-exercise.md)
 ___
-* DotNet Core 3.1
-* Ef Core (code first)
-* Clean Architecture
-  ![Screenshot](/Docs/Architecture.png)
+
+# Using:
+  * DotNet Core 3.1
+  * Ef Core (code first)
+  * Clean Architecture ![Screenshot](/Docs/Architecture.png)
+    
 
 
 
