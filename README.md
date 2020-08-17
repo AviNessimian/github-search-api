@@ -3,6 +3,16 @@
 [Github Search Client App](https://github.com/AviNessimian/github-search-client-app "Client Side")
 
 ___
+* DotNet Core 3.1
+* Ef Core (code first)
+* Clean Architecture
 
-[a relative link](/Docs/fullstack-exercise.txt)
+[Exercise README](/Docs/fullstack-exercise.md)
+
+
+
+
+
+
+
 
