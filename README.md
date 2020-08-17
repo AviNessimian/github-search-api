@@ -6,7 +6,7 @@ ___
 
 [Exercise details](/Docs/fullstack-exercise.md)
 
-[this subtext](/Docs/fullstack-exercise.txt)
+[this subtext](/Docs/fullstack-exercise.md)
 
 
 
