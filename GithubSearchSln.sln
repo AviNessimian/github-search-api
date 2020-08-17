@@ -15,11 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GithubSearch.UnitTest", "Gi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{174590AF-3F36-4FE9-9E45-2CFE6E5A309D}"
 	ProjectSection(SolutionItems) = preProject
-		fullstack-exercise.txt = fullstack-exercise.txt
+		Docs\fullstack-exercise.md = Docs\fullstack-exercise.md
 		GitHub repositories search .postman_collection.json = GitHub repositories search .postman_collection.json
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GithubSearch.Infrastructure", "GithubSearch.Infrastructure\GithubSearch.Infrastructure.csproj", "{CA99991F-AB28-449D-917E-C25312427C04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GithubSearch.Infrastructure", "GithubSearch.Infrastructure\GithubSearch.Infrastructure.csproj", "{CA99991F-AB28-449D-917E-C25312427C04}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

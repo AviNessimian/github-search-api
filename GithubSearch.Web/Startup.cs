@@ -48,10 +48,8 @@ namespace GithubSearch.Web
             services.AddHttpClient("github", c =>
             {
                 c.BaseAddress = new Uri("https://api.github.com/search/repositories");
-                // Github API versioning
-                c.DefaultRequestHeaders.Add("Accept", "application/vnd.github.v3+json");
-                // Github requires a user-agent
-                c.DefaultRequestHeaders.Add("User-Agent", "HttpClientFactory-Sample");
+                c.DefaultRequestHeaders.Add("Accept", "application/vnd.github.v3+json"); // Github API versioning
+                c.DefaultRequestHeaders.Add("User-Agent", "HttpClientFactory-Sample"); // Github requires a user-agent
             });
 
             services.AddCors(options =>

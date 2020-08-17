@@ -24,7 +24,13 @@ namespace GithubSearch.Web.Idp.Home
 
         public IActionResult Index()
         {
-            return View();
+            if (!_environment.IsDevelopment())
+            {
+                return View();
+            }
+
+            return new EmptyResult();
+            
         }
 
         /// <summary>

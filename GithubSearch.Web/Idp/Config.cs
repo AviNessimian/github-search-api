@@ -1,5 +1,4 @@
 ﻿using IdentityModel;
-using IdentityServer4;
 using IdentityServer4.Models;
 using Microsoft.Extensions.Configuration;
 using System.Collections.Generic;
@@ -51,50 +50,25 @@ namespace GithubSearch.Web.Idp
         {
             return new List<ApiResource>
             {
-                //new ApiResource("api", "Github Search API")
-                //{
-                ////    ApiSecrets = { new Secret("secret".Sha256()) },
-                //    UserClaims = new[]
-                //    {
-                //        JwtClaimTypes.Role,
-                //        StandardScopes.OpenId,
-                //        StandardScopes.Profile,
-                //        StandardScopes.Email,
-                //    }
-                //}
             };
         }
 
         public static IEnumerable<Client> GetClients(IConfiguration configuration)
         {
             var redirectUri = configuration["IdpConfig:RedirectUri"];
-            var postLogoutRedirectUri = configuration["IdpConfig:RedirectUri"];
+            var postLogoutRedirectUri = configuration["IdpConfig:PostLogoutRedirectUri"];
             var allowedCorsOrigin = configuration["IdpConfig:AllowedCorsOrigin"];
-            return new List<Client>
+
+
+            var angularClient = new Client
             {
-                new Client
-                {
-                    ClientName = "Github Search App",
-                    Description = "github search app (SPA)",
+                ClientName = "Github Search App",
+                Description = "github search app (SPA)",
 
-
-                    ClientId = "github-search-app",
-                    RequireClientSecret = false,
-                    AllowedGrantTypes = new List<string>(){
-                        OidcConstants.GrantTypes.Implicit
-                    },
-                    RedirectUris =
-                    {
-                        redirectUri
-                    },
-                    PostLogoutRedirectUris = {
-                        postLogoutRedirectUri
-                    },
-                    AllowedCorsOrigins = {
-                         
-                    },
-
-                    AllowedScopes =
+                ClientId = "github-search-app",
+                RequireClientSecret = false,
+                AllowedGrantTypes = new List<string>() { OidcConstants.GrantTypes.Implicit },
+                AllowedScopes =
                     {
                         StandardScopes.OpenId,
                         StandardScopes.Profile,
@@ -102,12 +76,24 @@ namespace GithubSearch.Web.Idp
                         "roles",
                         "api"
                     },
-                    AllowAccessTokensViaBrowser = true,
-                    AlwaysSendClientClaims = true,
+                AllowAccessTokensViaBrowser = true,
+                AlwaysSendClientClaims = true,
 
-                    AccessTokenLifetime = 18000,
-                    IdentityTokenLifetime = 18000,
-                }
+                AccessTokenLifetime = 18000,
+                IdentityTokenLifetime = 18000,
+            };
+
+            angularClient.RedirectUris = new[] { redirectUri };
+            angularClient.PostLogoutRedirectUris = new[] { postLogoutRedirectUri };
+
+            if (!string.IsNullOrWhiteSpace(allowedCorsOrigin))
+            {
+                angularClient.AllowedCorsOrigins = new[] { allowedCorsOrigin };
+            }
+
+            return new List<Client>
+            {
+               angularClient
             };
         }
     }

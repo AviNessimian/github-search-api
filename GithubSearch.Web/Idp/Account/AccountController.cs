@@ -189,7 +189,7 @@ namespace GithubSearch.Web.Idp.Account
 
         private async Task<LogoutViewModel> BuildLogoutViewModelAsync(string logoutId)
         {
-            var vm = new LogoutViewModel { LogoutId = logoutId, ShowLogoutPrompt = AccountOptions.ShowLogoutPrompt };
+            var vm = new LogoutViewModel { LogoutId = logoutId, ShowLogoutPrompt = false };
 
             if (User?.Identity.IsAuthenticated != true)
             {
