@@ -1,5 +1,5 @@
-# GithubSearch
-
+# GithubSearch Server
+ [I'm an inline-style link with title](https://www.google.com "Client Side")
 ### angular + asp.net core exercise ###
 
 * You need to create a search engine in github repositories.
@@ -20,3 +20,4 @@ the screen will display:
 ***** the exercise should be uploaded to github and the new repository link should be sent.
 
 ***** (scss/sass/css - BONUS - optional) use a theme or any styles you would like to add as a new touch to your search engine.
+
