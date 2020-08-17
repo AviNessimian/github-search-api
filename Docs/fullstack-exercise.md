@@ -14,6 +14,8 @@
   - search - only after login granted.
   - favorites - display only the favorites, will be saved in sql server.
 
+___
+
 **the exercise should be uploaded to github and the new repository link should be sent.** 
 
 **(scss/sass/css - BONUS - optional) use a theme or any styles you would like to add as a new touch to your search engine.**
