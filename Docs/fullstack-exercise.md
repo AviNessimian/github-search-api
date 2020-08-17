@@ -1,7 +1,7 @@
 ### angular + asp.net core exercise ###
 
 * You need to create a search engine in github repositories.
-the screen will display:
+* the screen will display:
   - search field
   - display search results (dropdown)
 
