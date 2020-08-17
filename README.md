@@ -2,6 +2,8 @@
 
 [Github Search Client App](https://github.com/AviNessimian/github-search-client-app "Client Side")
 
+___
+
 ### angular + asp.net core exercise ###
 
 * You need to create a search engine in github repositories.
