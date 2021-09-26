@@ -1,7 +1,9 @@
 # Github Search Server  
 
-##### [Go To Client App](https://github.com/AviNessimian/github-search-client-app "Client Side")
 ##### [Go To Assessment](/Docs/fullstack-exercise.md)
+
+##### [Go To Client App](https://github.com/AviNessimian/github-search-client-app "Client Side")
+
 ___
 
 # Using:
