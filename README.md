@@ -1,4 +1,4 @@
-# Github Search Server  
+# Fullstack Exercise: github search engine   
 
 ##### [Go To Assessment](/Docs/fullstack-exercise.md)
 
